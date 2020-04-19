@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div class='container'>
+       <table class="gridtable">
+        <thead>
+           <tr>
+               <th>column1</th>
+               <th>column2</th>
+               <th>column3</th>
+               <th>column4</th>
+               <th>column5</th>
+               <th>column6</th>
+               <th>column7</th>
+               <th>column8</th>
+               <th>column9</th>
+               <th>column10</th>
+           </tr>
+        </thead>
+        <tbody>
+           
+                if (($csvfile = fopen('resources/cities.csv','r')) !== FALSE){
+                 while (($csvdata = fgetcsv($csvfile, 1000, ",")) !==FALSE) {
+                    $error = '',
+                    $colcount = count($csvdata) ;
+                    echo '<tr>';
+                    echo '<td>',$csvdata[0],'</td>';
+                    echo '</tr>';
+                 }   
+                 fclose($csvfile);
+                }
+          
+
+        </tbody>
+       </table>
+   </div> 
+</body>
+</html>
