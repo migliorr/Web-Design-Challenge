@@ -1,3 +1,50 @@
+
+body{
+  background-image: url(Resources/assets/images/pic.png);
+  background-size: cover;
+
+}
+.navigation .navbar-brand{
+  color: greenyellow; 
+  margin-left: 35px; 
+  padding: inherit; 
+  font-weight: bold; 
+  background-color:rgb(12, 204, 92);
+}
+
+.navbar-nav {
+  font-size: 40px;
+}
+
+.btn{
+  background-color: rgb(12, 204, 124);
+}
+
+.container {
+  background-color: green;
+  margin-top: 15px;
+  opacity: 1;
+  margin-bottom: 40px;
+}
+.p1 {
+  text-align: center;
+}
+
+.table {
+  width: auto;
+}
+.box {
+  padding: 50px 10px; 
+  background-color:rgb(255, 255, 255);
+}
+
+.title {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-size: 24px;
+  text-align: center;
+  color: rgb(12, 86, 204)
+}
 .img-fluid {
   max-width: 100%;
   height: auto;

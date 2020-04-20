@@ -12,6 +12,41 @@
         
       </head>
     <body>
+      <div class="navigation">
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(230, 234, 240)">
+        <a class="navbar-brand" href="index.html">Latitude</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Plots
+            </a>
+            <!-- <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"> -->
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+               <a class="dropdown-item" href="latitude_temp.html">Latitude and temperature</a>
+               <div class="dropdown-divider"></div>
+               <a class="dropdown-item" href="latitude_wind.html">Latitude and Wind Speed</a>
+               <div class="dropdown-divider"></div>
+               <a class="dropdown-item" href="latitude_humidity.html">Latitude and Humidity</a>
+               <div class="dropdown-divider"></div>
+               <a class="dropdown-item" href="latitude_clouds.html">Latitude and Clouds</a>
+            </div>
+           </li>
+           <li class="nav-item">
+            <a class="nav-link" href="source_data.html">Raw Data</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="comparison.html">Comparison</a>
+           </li>
+          </ul>
+        </div>
+       </nav>
+      </div>
+
+
         <table class="table table-bordered table-hover table-condensed">
             <thead><tr><th title="Field #1">City_ID</th>
             <th title="Field #2">City</th>
